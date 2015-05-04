@@ -1,59 +1,59 @@
-#¹ØÓÚ±¾²©¿ÍµÄ¹¹½¨
+#å…³äºæœ¬åšå®¢çš„æ„å»º
 
-##Ò»¡¢ÌØĞÔ
-»ùÓÚGithubµÄReadmeÎÄ¼ş¹¹Ôì£¬½«²©¿Í×ö³ÉÒ»¸öÓÉmarkdownÎÄ¼ş¹¹³ÉµÄÏîÄ¿£¬ÓÃgit¡¢sublimeµÈ½øĞĞ¹ÜÀí
-####Ä¿Â¼¹¹Ôì
+##ä¸€ã€ç‰¹æ€§
+åŸºäºGithubçš„Readmeæ–‡ä»¶æ„é€ ï¼Œå°†åšå®¢åšæˆä¸€ä¸ªç”±markdownæ–‡ä»¶æ„æˆçš„é¡¹ç›®ï¼Œç”¨gitã€sublimeç­‰è¿›è¡Œç®¡ç†
+####ç›®å½•æ„é€ 
 ``` 
     |-Blog
-      |-blogs            // ËùÓĞÎÄÕÂ´æ·ÅÄ¿Â¼
-        |-001.Test Art1  // ÎÄÕÂÄ¿Â¼£¬°üº¬mdÎÄ¼şºÍÆäÒıÓÃµÄÍ¼Æ¬
-           -README.md    // ÎÄÕÂµÄÖ÷ÎÄ¼ş
+      |-blogs            // æ‰€æœ‰æ–‡ç« å­˜æ”¾ç›®å½•
+        |-001.Test Art1  // æ–‡ç« ç›®å½•ï¼ŒåŒ…å«mdæ–‡ä»¶å’Œå…¶å¼•ç”¨çš„å›¾ç‰‡
+           -README.md    // æ–‡ç« çš„ä¸»æ–‡ä»¶
            -1.jpg
         |-002.Test Art2
-      |-tags             // ±êÇ©Ë÷Òı´æ·ÅÄ¿Â¼
-      |-template         // ×Ô¶¯»¯Ä£°æ
-      -auto.py           // ×Ô¶¯»¯Ë÷Òı¹¤¾ß
-      -README.md         // index Ö÷Ä¿Â¼
+      |-tags             // æ ‡ç­¾ç´¢å¼•å­˜æ”¾ç›®å½•
+      |-template         // è‡ªåŠ¨åŒ–æ¨¡ç‰ˆ
+      -auto.py           // è‡ªåŠ¨åŒ–ç´¢å¼•å·¥å…·
+      -README.md         // index ä¸»ç›®å½•
 
 ```
 
 
-##¶ş¡¢ÎÊÌâºÍ½â¾ö
-####ÎÊÌâ
-- Ä¿Â¼Ë÷ÒıÎÊÌâ£ºÊ×Ò³ĞèÒªÓĞÒ»¸öÄ¿Â¼ÄÜ¹»¿´µ½ËùÓĞµÄ²©¿Í±êÌâ£¬²¢ÇÒ·½±ãµØÌø×ª
-- ±êÇ©¹éÀàÎÊÌâ£ºÒ»°ã²©¿ÍÏµÍ³¶¼ÓĞÒ»¸ö±êÇ©·ÖÀàÏµÍ³£¬ÓÃÒÔ¶ÔÎÄÕÂ½øĞĞ·ÖÀà£¬ËùÒÔÕâ¸ö±ØĞëÓĞ
+##äºŒã€é—®é¢˜å’Œè§£å†³
+####é—®é¢˜
+- ç›®å½•ç´¢å¼•é—®é¢˜ï¼šé¦–é¡µéœ€è¦æœ‰ä¸€ä¸ªç›®å½•èƒ½å¤Ÿçœ‹åˆ°æ‰€æœ‰çš„åšå®¢æ ‡é¢˜ï¼Œå¹¶ä¸”æ–¹ä¾¿åœ°è·³è½¬
+- æ ‡ç­¾å½’ç±»é—®é¢˜ï¼šä¸€èˆ¬åšå®¢ç³»ç»Ÿéƒ½æœ‰ä¸€ä¸ªæ ‡ç­¾åˆ†ç±»ç³»ç»Ÿï¼Œç”¨ä»¥å¯¹æ–‡ç« è¿›è¡Œåˆ†ç±»ï¼Œæ‰€ä»¥è¿™ä¸ªå¿…é¡»æœ‰
 
-####½â¾ö
-ÓÃpythonÊµÏÖÁËÒ»¸ö×Ô¶¯»¯¹¹½¨¹¤¾ß[auto.py](https://github.com/yimun/Blog/blob/master/auto.py)£¬¶ÔÓÚblogsÎÄ¼ş¼ĞÏÂµÄÎÄ¼ş½øĞĞÌáÈ¡±êÇ©£¬·ÖÀà²¢´´½¨±êÇ©ÁĞ±í(tagsÎÄ¼ş¼ĞÏÂµÄË÷Òı)£¬ÒÔ¼°¸ùÄ¿Â¼Ë÷ÒıµÄ¹¹½¨(README.md)
+####è§£å†³
+ç”¨pythonå®ç°äº†ä¸€ä¸ªè‡ªåŠ¨åŒ–æ„å»ºå·¥å…·[auto.py](https://github.com/yimun/Blog/blob/master/auto.py)ï¼Œå¯¹äºblogsæ–‡ä»¶å¤¹ä¸‹çš„æ–‡ä»¶è¿›è¡Œæå–æ ‡ç­¾ï¼Œåˆ†ç±»å¹¶åˆ›å»ºæ ‡ç­¾åˆ—è¡¨(tagsæ–‡ä»¶å¤¹ä¸‹çš„ç´¢å¼•)ï¼Œä»¥åŠæ ¹ç›®å½•ç´¢å¼•çš„æ„å»º(README.md)
 
-##Èı¡¢²©¿Í¹¤×÷Á÷
-####1.Ìí¼Ó²©¿Í
+##ä¸‰ã€åšå®¢å·¥ä½œæµ
+####1.æ·»åŠ åšå®¢
 ```
 python auto.py add articlename
 ```
-![Screenshot](https://raw.githubusercontent.com/yimun/Blog/master/blogs/001.¹ØÓÚ±¾²©¿ÍµÄ¹¹½¨/1.png)
+![Screenshot](https://raw.githubusercontent.com/yimun/Blog/master/blogs/001.å…³äºæœ¬åšå®¢çš„æ„å»º/1.png)
 
-¸ÃÃüÁîÄ¬ÈÏÔÚblogsÄ¿Â¼ÏÂĞÂ½¨Ò»¸öÃûÎª`ĞòºÅ+articlename`µÄÄ¿Â¼£¬Ä¿Â¼ÏÂÄ¬ÈÏÎÄ¼şÎª`README.md`,ÆäÖĞµÄÄ¬ÈÏÄ£°åÊÇ[new.md](https://github.com/yimun/Blog/blob/master/template/new.md)£¬ÎÄÕÂÔÚÕâÀï±à¼­
+è¯¥å‘½ä»¤é»˜è®¤åœ¨blogsç›®å½•ä¸‹æ–°å»ºä¸€ä¸ªåä¸º`åºå·+articlename`çš„ç›®å½•ï¼Œç›®å½•ä¸‹é»˜è®¤æ–‡ä»¶ä¸º`README.md`,å…¶ä¸­çš„é»˜è®¤æ¨¡æ¿æ˜¯[new.md](https://github.com/yimun/Blog/blob/master/template/new.md)ï¼Œæ–‡ç« åœ¨è¿™é‡Œç¼–è¾‘
 
-![Screenshot](https://raw.githubusercontent.com/yimun/Blog/master/blogs/001.¹ØÓÚ±¾²©¿ÍµÄ¹¹½¨/2.png)
+![Screenshot](https://raw.githubusercontent.com/yimun/Blog/master/blogs/001.å…³äºæœ¬åšå®¢çš„æ„å»º/2.png)
 
-####2.¸üĞÂË÷Òı
+####2.æ›´æ–°ç´¢å¼•
 ```
 python auto.py update
 ```
-![Screenshot](https://raw.githubusercontent.com/yimun/Blog/master/blogs/001.¹ØÓÚ±¾²©¿ÍµÄ¹¹½¨/3.png)
+![Screenshot](https://raw.githubusercontent.com/yimun/Blog/master/blogs/001.å…³äºæœ¬åšå®¢çš„æ„å»º/3.png)
 
-tagsÄ¿Â¼¸üĞÂºó£º
+tagsç›®å½•æ›´æ–°åï¼š
 
-![Screenshot](https://raw.githubusercontent.com/yimun/Blog/master/blogs/001.¹ØÓÚ±¾²©¿ÍµÄ¹¹½¨/4.png)
+![Screenshot](https://raw.githubusercontent.com/yimun/Blog/master/blogs/001.å…³äºæœ¬åšå®¢çš„æ„å»º/4.png)
 
-¸ùÄ¿Â¼ÏÂµÄREADME.md¸üĞÂºó£º
+æ ¹ç›®å½•ä¸‹çš„README.mdæ›´æ–°åï¼š
 
-![Screenshot](https://raw.githubusercontent.com/yimun/Blog/master/blogs/001.¹ØÓÚ±¾²©¿ÍµÄ¹¹½¨/5.png)
+![Screenshot](https://raw.githubusercontent.com/yimun/Blog/master/blogs/001.å…³äºæœ¬åšå®¢çš„æ„å»º/5.png)
 
-####3.gitÌá½»
+####3.gitæäº¤
 ```
-´Ë´¦Ê¡ÂÔÁ½ÈıÌõÃüÁî...
+æ­¤å¤„çœç•¥ä¸¤ä¸‰æ¡å‘½ä»¤...
 ```
 
 
