@@ -14,7 +14,7 @@ TAGSPATH  = './tags/'
 TAGTEMP   = './template/tag.md'
 INDEXTEMP = './template/index.md'
 LINK_BASE = 'https://github.com/yimun/Blog/tree/master/'
-TAGS_PATTERN = '``(.*?)``'
+TAGS_PATTERN = '(?<!`)``([^`]+?)``(?!`)'
 INDEX_FILE = "./README.md"
 
 
@@ -39,14 +39,15 @@ def buildTagUrl(tagname):
     ''' 
     build tag url use tag name
     '''
-    return '[``' + tagname + '``](' + LINK_BASE + 'tags/' + tagname + '.md)'
+    return '[``' + tagname + '``](' + LINK_BASE + 'tags/' + tagname + '.md) '
 
 
 def update(blogpath):
 
     # get tags from data files
     tagsmap = {}
-    dirlist = [{'filepath':os.path.join(blogpath,item)+"/README.md",'name':item} for item in os.listdir(blogpath)]
+    dirlist = [{'filepath':os.path.join(blogpath,item)+"/README.md",'name':item,\
+        'time':os.path.getatime(os.path.join(blogpath,item)+"/README.md")} for item in os.listdir(blogpath)]
     print 'Total %d blogs has found...' % len(dirlist)
     for dir in dirlist:
         tags = getTags(dir['filepath'])
@@ -80,11 +81,17 @@ def update(blogpath):
     index_temp = unicode(open(INDEXTEMP).read(),'utf8')
     catalog = ''
     tags = ''
+    newest = ''
     for dir in dirlist:
         catalog += buildCatalogUrl(dir)
     for key in tagsmap.keys():
         tags += buildTagUrl(key)
+    dirlist.sort(key = lambda dir : dir['time'],reverse = True)
+    for dir in dirlist[:3]:
+        newest += buildCatalogUrl(dir)
+
     s = index_temp.replace('{%catalog%}',unicode(catalog,'gbk'))
+    s = s.replace('{%newest%}',unicode(newest,'gbk'))
     s = s.replace('{%tags%}',tags)
     f = open(INDEX_FILE,'w')
     f.write(s)
