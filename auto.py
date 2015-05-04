@@ -13,6 +13,8 @@ BLOGPATH  = './blogs/'
 TAGSPATH  = './tags/'
 TAGTEMP   = './template/tag.md'
 INDEXTEMP = './template/index.md'
+NEWTEMP = './template/new.md'
+
 LINK_BASE = 'https://github.com/yimun/Blog/tree/master/'
 TAGS_PATTERN = '(?<!`)``([^`]+?)``(?!`)'
 INDEX_FILE = "./README.md"
@@ -43,11 +45,13 @@ def buildTagUrl(tagname):
 
 
 def update(blogpath):
-
+    '''
+    get tags from files under blogpath, build tags indexing and catalog indexing
+    '''
     # get tags from data files
     tagsmap = {}
     dirlist = [{'filepath':os.path.join(blogpath,item)+"/README.md",'name':item,\
-        'time':os.path.getatime(os.path.join(blogpath,item)+"/README.md")} for item in os.listdir(blogpath)]
+        'time':os.path.getmtime(os.path.join(blogpath,item)+"/README.md")} for item in os.listdir(blogpath)]
     print 'Total %d blogs has found...' % len(dirlist)
     for dir in dirlist:
         tags = getTags(dir['filepath'])
@@ -73,7 +77,7 @@ def update(blogpath):
         f.write(s)
         f.close()
     print 'tags file updated ok!'
-    print 'updating index file...'
+    print 'updating catalog index file...'
     # delete index file 
     if os.path.exists(INDEX_FILE):
         os.remove(INDEX_FILE)
@@ -96,7 +100,20 @@ def update(blogpath):
     f = open(INDEX_FILE,'w')
     f.write(s)
     f.close()
-    print 'index file updated ok!'
+    print 'catalog index file updated ok!'
+
+def add(artname):
+    prefix = len(os.listdir(BLOGPATH)) + 1
+    newpath = "%s%03d.%s/" % (BLOGPATH,prefix,artname)
+    filepath = newpath + "README.md"
+    os.mkdir(newpath)
+    new_temp = unicode(open(NEWTEMP).read(),'utf8')
+    s = new_temp.replace('{%title%}',unicode(artname,'gbk'))
+    s = s.replace('{%time%}',time.strftime("%Y-%m-%d %H:%M"))
+    f = open(filepath,"w")
+    f.write(s)
+    f.close()
+    print "add article %s ok!" % artname
 
 
 def initMenu():
@@ -111,7 +128,10 @@ if __name__ == '__main__':
     sys.setdefaultencoding('utf8')
     args = initMenu()
     if args['action'] == 'add':
-        print 'doadd'
+        if not args['arg']:
+            print "shoule input blog name"
+        else:
+            add(args['arg'])
     if args['action'] == 'update':
         if not args['arg']:
             update(BLOGPATH)

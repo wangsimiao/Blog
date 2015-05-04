@@ -11,8 +11,8 @@
            -1.jpg
         |-002....
       |-tags            // 标签索引存放目录
-      |-template
-      -autoindex.py     // 自动化索引工具
+      |-template        // 自动化模版
+      -auto.py          // 自动化索引工具
       -README.md        // index 主目录
 
 ```
@@ -23,9 +23,12 @@
 - 标签归类问题：一般博客系统都有一个标签分类系统，用以对文章进行分类，所以这个必须有
 
 ####解决
-用python实现了一个自动化构建工具[autoindex.py](https://github.com/yimun/Blog/blob/master/autoindex.py)，对于blogs文件夹下的文件进行提取标签，分类并创建标签列表(tags文件夹下的索引)，以及根目录索引的构建(README.md)
-```python
-python autoindex.py update          // 更新目录
-python autoindex.py add articlename // 添加文章(待实现)
+用python实现了一个自动化构建工具[auto.py](https://github.com/yimun/Blog/blob/master/auto.py)，对于blogs文件夹下的文件进行提取标签，分类并创建标签列表(tags文件夹下的索引)，以及根目录索引的构建(README.md)
 
 ```
+python autoindex.py update          // 更新目录
+python autoindex.py add articlename // 添加文章
+
+```
+---
+*2015-05-04 17:31*
