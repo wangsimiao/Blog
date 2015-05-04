@@ -1,2 +1,8 @@
-# Blog
-Yimu's personal blog.Based on Github readme files.
+# 易木的博客
+
+## 目录
+[001.一点臆想](/data/001.一点臆想/)
+
+## 标签
+
+## 关于我
