@@ -1,8 +1,8 @@
 # 易木的博客
 
 ## 目录
-- [001.一些臆想](https://github.com/yimun/Blog/tree/master/data/001.一些臆想)
-- [002.Migrate To Gradle 手动迁移ADT 的ANT结构工程至Gradle](https://github.com/yimun/Blog/tree/master/data/002.Migrate To Gradle 手动迁移ADT 的ANT结构工程至Gradle)
+- [001.一些臆想](https://github.com/yimun/Blog/tree/master/data/001.一些臆想/README.md)
+- [002.Migrate To Gradle 手动迁移ADT 的ANT结构工程至Gradle](https://github.com/yimun/Blog/tree/master/data/002.Migrate To Gradle 手动迁移ADT 的ANT结构工程至Gradle/README.md)
 
 ## 标签
 [``Android``](http://www.baidu.com) ``MySQL`` ``算法`` ``C++`` ``日常``
