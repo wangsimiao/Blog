@@ -1,4 +1,5 @@
 #关于本博客的构建
+``日常`` 
 
 ##一、特性
 基于Github的Readme文件构造，将博客做成一个由markdown文件构成的项目，用git、sublime等进行管理
