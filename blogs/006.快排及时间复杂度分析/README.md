@@ -1,5 +1,7 @@
 #快排及时间复杂度分析
-``算法``
+*2015-05-05 09:34*<br/>``算法``
+
+---
 
 ##一、怎么写快排
 快排是分治思想的典型运用，写法也有很多种
@@ -88,8 +90,7 @@ P（n）是Partition(n)消耗的时间；
 
 ![Screenshot](https://raw.githubusercontent.com/yimun/Blog/master/blogs/006.快排及时间复杂度分析/f.png)
 
-
-
-
 ---
-*2015-05-05 09:34*
+*By [@yimu](https://github.com/yimun/Blog/blob/master/README.md)*
+
+

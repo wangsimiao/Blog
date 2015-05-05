@@ -1,5 +1,7 @@
 #{%title%}
-
+*{%time%}*<br/>``test``
 
 ---
-*{%time%}*
+
+---
+*By [@yimu](https://github.com/yimun/Blog/blob/master/README.md)*
