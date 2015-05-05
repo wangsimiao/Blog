@@ -69,7 +69,7 @@ qsort([H | T]) -> qsort([X || X <- T, X < H ]) ++ [H] ++ qsort([X || X <- T, X >
 ####简单分析
 由于快排是个分治递归算法，简单画下递归树。
 
-![Screenshot](https://raw.githubusercontent.com/yimun/Blog/master/blogs/006.快排及时间复杂度分析/0.png)
+![Screenshot](https://raw.githubusercontent.com/yimun/Blog/master/blogs/006.快排及时间复杂度分析/tree.png)
 
 在最好情况下，每次递归的划分都是1/2，这时的递归树近似为一棵**满二叉树**，数的高度（层数）为log2n，容易简单的判断出在每一层上总共都进行了n次操作，所以时间复杂度是O(nlogn)；在最坏情况下（数组已经有序），这时候递归树是一棵单边树，高度为n，所以时间复杂度是O(n^2)。
 
@@ -82,11 +82,11 @@ T（n）是QuickSort（n）消耗的时间；
 P（n）是Partition(n)消耗的时间；
 （Partition专指把n个数据分为大小2份的时间）
 
-![Screenshot](https://raw.githubusercontent.com/yimun/Blog/master/blogs/006.快排及时间复杂度分析/1.png)
+![Screenshot](https://raw.githubusercontent.com/yimun/Blog/master/blogs/006.快排及时间复杂度分析/math.png)
 
 有些文章给出了快排的精确计算结果：
 
-![Screenshot](https://raw.githubusercontent.com/yimun/Blog/master/blogs/006.快排及时间复杂度分析/2.png)
+![Screenshot](https://raw.githubusercontent.com/yimun/Blog/master/blogs/006.快排及时间复杂度分析/f.png)
 
 
 
