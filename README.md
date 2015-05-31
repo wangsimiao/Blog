@@ -1,8 +1,8 @@
 # 易木的博客
 ## 最新文章
+- [007.论Android后台Service的持久性](https://github.com/yimun/Blog/tree/master/blogs/007.论Android后台Service的持久性/README.md)
 - [006.快排及时间复杂度分析](https://github.com/yimun/Blog/tree/master/blogs/006.快排及时间复杂度分析/README.md)
 - [005.去哪儿网实习面经](https://github.com/yimun/Blog/tree/master/blogs/005.去哪儿网实习面经/README.md)
-- [001.关于本博客的构建](https://github.com/yimun/Blog/tree/master/blogs/001.关于本博客的构建/README.md)
 
 
 ## 文章目录
@@ -12,6 +12,7 @@
 - [004.ubuntu启动盘修复系统引导](https://github.com/yimun/Blog/tree/master/blogs/004.ubuntu启动盘修复系统引导/README.md)
 - [005.去哪儿网实习面经](https://github.com/yimun/Blog/tree/master/blogs/005.去哪儿网实习面经/README.md)
 - [006.快排及时间复杂度分析](https://github.com/yimun/Blog/tree/master/blogs/006.快排及时间复杂度分析/README.md)
+- [007.论Android后台Service的持久性](https://github.com/yimun/Blog/tree/master/blogs/007.论Android后台Service的持久性/README.md)
 
 
 ## 标签
