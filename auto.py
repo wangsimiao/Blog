@@ -19,7 +19,7 @@ LINK_BASE = 'https://github.com/yimun/Blog/tree/master/'
 TAGS_PATTERN = '(?<!`)``([^`]+?)``(?!`)'
 INDEX_FILE = "./README.md"
 
-
+NEWEST_CNT = 5
 
 
 def getTags(file):
@@ -91,7 +91,7 @@ def update(blogpath):
     for key in tagsmap.keys():
         tags += buildTagUrl(key)
     dirlist.sort(key = lambda dir : dir['time'],reverse = True)
-    for dir in dirlist[:3]:
+    for dir in dirlist[:NEWEST_CNT]:
         newest += buildCatalogUrl(dir)
 
     s = index_temp.replace('{%catalog%}',unicode(catalog,'gbk'))
