@@ -1,8 +1,8 @@
 # 易木的博客
 ## 最新文章
+- [009.Android lint的使用](https://github.com/yimun/Blog/tree/master/blogs/009.Android lint的使用/README.md)
 - [008.ProGuard笔记](https://github.com/yimun/Blog/tree/master/blogs/008.ProGuard笔记/README.md)
 - [007.论Android后台Service的持久性](https://github.com/yimun/Blog/tree/master/blogs/007.论Android后台Service的持久性/README.md)
-- [006.快排及时间复杂度分析](https://github.com/yimun/Blog/tree/master/blogs/006.快排及时间复杂度分析/README.md)
 
 
 ## 文章目录
@@ -14,6 +14,7 @@
 - [006.快排及时间复杂度分析](https://github.com/yimun/Blog/tree/master/blogs/006.快排及时间复杂度分析/README.md)
 - [007.论Android后台Service的持久性](https://github.com/yimun/Blog/tree/master/blogs/007.论Android后台Service的持久性/README.md)
 - [008.ProGuard笔记](https://github.com/yimun/Blog/tree/master/blogs/008.ProGuard笔记/README.md)
+- [009.Android lint的使用](https://github.com/yimun/Blog/tree/master/blogs/009.Android lint的使用/README.md)
 
 
 ## 标签
